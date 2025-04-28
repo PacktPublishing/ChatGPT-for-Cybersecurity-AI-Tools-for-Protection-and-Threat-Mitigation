@@ -1,0 +1,20 @@
+Return-Path: <security@paypal-support.com>
+Received: from unknown ([185.200.45.22]) by mail.company.com with SMTP;
+    Mon, 22 Jan 2025 14:25:32 -0500
+From: "PayPal Security Team" <security@paypal-support.com>
+Reply-To: "PayPal Helpdesk" <helpdesk@paypal-support.com>
+To: victim@company.com
+Subject: [Action Required] Unusual Activity Detected on Your PayPal Account
+Date: Mon, 22 Jan 2025 14:23:17 -0500
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Message-ID: <8764312.mail@paypal-support.com>
+X-Mailer: Outlook 2016
+X-Spam-Flag: NO
+X-Originating-IP: [185.200.45.22]
+Authentication-Results: mail.company.com;
+    spf=softfail smtp.mailfrom=paypal-support.com
+DKIM-Signature: v=1; a=rsa-sha256; d=paypal-support.com;
+    s=default; h=from:to:subject:date:mime-version;
+    bh=xyz123==;
+Received-SPF: SoftFail (mail.company.com: domain paypal-support.com does not explicitly allow 185.200.45.22 to send mail)

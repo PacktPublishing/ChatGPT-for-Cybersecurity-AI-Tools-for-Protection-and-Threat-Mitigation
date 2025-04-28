@@ -1,0 +1,63 @@
+
+**Threat Intelligence Report: Advanced Persistent Threat (APT) Campaign Targeting Financial Sector**
+
+**1. Executive Summary:**
+In recent weeks, cybersecurity researchers have observed an increase in malicious activity targeting financial institutions across Europe and North America. The campaign, attributed to an Advanced Persistent Threat (APT) group known as "NightFalcon," involves phishing emails, malicious attachments, and custom-built malware designed to exfiltrate sensitive data. Immediate action is required to mitigate the risks posed by this campaign.
+
+**2. Campaign Overview:**
+The attackers initiated their campaign via carefully crafted phishing emails masquerading as legitimate financial documents. These emails included malicious attachments, specifically macro-enabled Excel files and PDF documents, designed to exploit vulnerabilities in outdated office software.
+
+Once executed, the payload established a Command and Control (C2) connection to attacker-controlled servers and began exfiltrating sensitive financial records.
+
+**3. Technical Details:**
+- **Initial Access:** Phishing emails with malicious attachments (Excel and PDF documents).
+- **Malware Used:** Custom malware identified as *FalconStealer v2.1*.
+- **Exfiltration Method:** Encrypted data transmission via HTTPS to external servers.
+- **Persistence Mechanism:** Registry key modifications and scheduled tasks.
+
+**4. Indicators of Compromise (IoCs):**
+- **IP Addresses:**
+   - 185.243.218.56
+   - 102.89.45.67
+   - 198.51.100.15
+
+- **Domains:**
+   - finance-secure-login.com
+   - secureportal-check.net
+   - account-review-alert.org
+
+- **File Hashes (SHA-256):**
+   - d41d8cd98f00b204e9800998ecf8427e
+   - e99a18c428cb38d5f260853678922e03
+   - 098f6bcd4621d373cade4e832627b4f6
+
+- **Email Addresses Used in Phishing:**
+   - admin@finance-secure-login.com
+   - support@account-review-alert.org
+
+**5. Threat Actor Profile:**
+- **Group Name:** NightFalcon
+- **Known Motives:** Financial data theft, ransomware deployment.
+- **Tactics, Techniques, and Procedures (TTPs):**
+   - Phishing campaigns with malicious attachments.
+   - Use of encrypted channels for data exfiltration.
+   - Targeting vulnerabilities in outdated software.
+
+**6. Affected Systems:**
+- Outdated Microsoft Office Suites.
+- Legacy financial transaction systems.
+- Unpatched web servers.
+
+**7. Mitigation Recommendations:**
+1. Block the identified IoCs (IP addresses, domains, and hashes) at the firewall and intrusion prevention systems (IPS).
+2. Update Microsoft Office and all outdated software immediately.
+3. Educate staff about recognizing phishing emails and suspicious attachments.
+4. Implement multi-factor authentication (MFA) across all systems.
+5. Conduct regular vulnerability assessments and patch management.
+6. Monitor outbound traffic for anomalies.
+7. Enable advanced threat detection and behavioral analytics tools.
+
+**8. Conclusion:**
+The NightFalcon APT campaign highlights the persistent and evolving threats facing the financial sector. Proactive defense strategies, timely updates, and continuous monitoring are crucial to mitigating these risks effectively.
+
+**End of Report**

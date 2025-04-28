@@ -1,0 +1,41 @@
+Date,Source IP,Target,Attack Type,Result
+2025-01-05,198.51.100.42,Server E,Ransomware,Backup Restored
+2025-01-01,172.16.254.1,Server E,SQL Injection,Partial Data Leak
+2025-01-03,192.168.1.10,Server A,DDoS,Mitigated by Firewall
+2025-01-04,198.51.100.42,Server E,DDoS,Mitigated by Firewall
+2025-01-02,198.51.100.42,Server E,SQL Injection,Partial Data Leak
+2025-01-01,172.16.254.1,Server D,Ransomware,Backup Restored
+2025-01-07,198.51.100.42,Server A,DDoS,Service Disruption
+2025-01-01,172.16.254.1,Server E,DDoS,Mitigated by Firewall
+2025-01-06,172.16.254.1,Server A,Ransomware,Backup Restored
+2025-01-03,192.168.1.10,Server D,DDoS,Service Disruption
+2025-01-01,172.16.254.1,Server D,Ransomware,Backup Restored
+2025-01-02,172.16.254.1,Server D,SQL Injection,Partial Data Leak
+2025-01-01,172.16.254.1,Server A,SQL Injection,No Leak Detected
+2025-01-01,192.168.1.10,Server D,SQL Injection,No Leak Detected
+2025-01-06,192.168.1.10,Server A,DDoS,Service Disruption
+2025-01-04,192.168.1.10,Server E,Ransomware,Backup Restored
+2025-01-06,172.16.254.1,Server A,Ransomware,System Compromised
+2025-01-05,172.16.254.1,Server A,Ransomware,Backup Restored
+2025-01-07,198.51.100.42,Server E,DDoS,Service Disruption
+2025-01-05,192.168.1.10,Server D,SQL Injection,Partial Data Leak
+2025-01-02,198.51.100.42,Server A,DDoS,Mitigated by Firewall
+2025-01-01,198.51.100.42,Server D,DDoS,Mitigated by Firewall
+2025-01-01,198.51.100.42,Server E,Ransomware,Backup Restored
+2025-01-04,198.51.100.42,Server A,DDoS,Service Disruption
+2025-01-05,172.16.254.1,Server E,SQL Injection,Partial Data Leak
+2025-01-07,192.168.1.10,Server E,Ransomware,Backup Restored
+2025-01-02,172.16.254.1,Server E,SQL Injection,No Leak Detected
+2025-01-07,192.168.1.10,Server E,DDoS,Service Disruption
+2025-01-05,172.16.254.1,Server A,SQL Injection,Partial Data Leak
+2025-01-06,172.16.254.1,Server E,Ransomware,System Compromised
+2025-01-03,192.168.1.10,Server A,SQL Injection,Partial Data Leak
+2025-01-07,172.16.254.1,Server E,SQL Injection,Partial Data Leak
+2025-01-02,192.168.1.10,Server E,SQL Injection,Partial Data Leak
+2025-01-03,198.51.100.42,Server D,Ransomware,Backup Restored
+2025-01-07,172.16.254.1,Server A,DDoS,Service Disruption
+2025-01-04,198.51.100.42,Server E,Ransomware,Backup Restored
+2025-01-05,198.51.100.42,Server D,SQL Injection,No Leak Detected
+2025-01-02,198.51.100.42,Server D,SQL Injection,No Leak Detected
+2025-01-01,172.16.254.1,Server E,SQL Injection,Partial Data Leak
+2025-01-05,198.51.100.42,Server E,SQL Injection,No Leak Detected

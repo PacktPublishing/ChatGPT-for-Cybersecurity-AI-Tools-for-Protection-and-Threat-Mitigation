@@ -1,0 +1,16 @@
+Jan 22 10:12:34 server-1 sshd[4521]: Failed password for root from 203.0.113.50 port 54321 ssh2
+Jan 22 10:12:37 server-1 sshd[4522]: Failed password for root from 203.0.113.50 port 54322 ssh2
+Jan 22 10:12:40 server-1 sshd[4523]: Failed password for root from 203.0.113.50 port 54323 ssh2
+Jan 22 10:12:43 server-1 sshd[4524]: Failed password for root from 203.0.113.50 port 54324 ssh2
+Jan 22 10:12:46 server-1 sshd[4525]: Failed password for root from 203.0.113.50 port 54325 ssh2
+Jan 22 10:13:00 server-1 kernel: [154321.785432] Firewall: IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.50 DST=192.168.1.101 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=45678 DF PROTO=TCP SPT=54326 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0
+Jan 22 10:15:42 server-1 sudo:    user123 : TTY=pts/1 ; PWD=/home/user123 ; COMMAND=/bin/bash /tmp/suspicious_script.sh
+Jan 22 10:15:47 server-1 systemd[1]: Unrecognized service /tmp/suspicious_script.sh started
+Jan 22 10:16:00 server-1 audit[5678]: ANOM_EXEC auid=1002 uid=1002 gid=1002 ses=10 pid=5678 comm="suspicious_script" exe="/tmp/suspicious_script.sh" reason="execve() from untrusted directory"
+Jan 22 10:17:33 server-1 kernel: [154432.123987] ALERT: Unusual process detected running with root privileges: /tmp/suspicious_script.sh
+Jan 22 10:20:10 server-1 audit[6754]: ANOM_ABEND auid=1002 uid=1002 gid=1002 ses=10 pid=6754 comm="apache2" reason="memory corruption" sig=11
+Jan 22 10:22:55 server-1 sudo:    user456 : TTY=pts/3 ; PWD=/home/user456 ; COMMAND=/usr/bin/cat /etc/shadow
+Jan 22 10:23:05 server-1 kernel: [154650.789123] ALERT: Unauthorized attempt to access /etc/shadow by user456
+Jan 22 10:25:14 server-1 systemd[1]: Stopping Cleanup of Temporary Directories...
+Jan 22 10:26:42 server-1 crond[2876]: (root) CMD (/usr/bin/python3 /tmp/malware.py)
+Jan 22 10:30:22 server-1 kernel: [154789.435678] Firewall: IN=eth0 OUT= MAC=00:1a:2b:3c:4d:5e SRC=203.0.113.200 DST=192.168.1.101 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=87654 DF PROTO=TCP SPT=52345 DPT=3389 WINDOW=65535 RES=0x00 SYN URGP=0
